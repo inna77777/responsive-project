@@ -1,0 +1,113 @@
+:root {
+  --color-text-background: #f5f2fe;
+  --primary-font-button-color: #6c63ff;
+  --second-font-color: #4c4c4c;
+}
+body {
+  padding-top: 100px;
+}
+.logo {
+  height: 40px;
+}
+.navigation {
+  font-size: 24px;
+}
+#presentation {
+  text-align: center;
+}
+.medium-font {
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+.big-font {
+  font-size: 96px;
+  margin: 0 10px;
+}
+.small-font {
+  color: var(--second-font-color);
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 48px 0;
+}
+
+.buttons {
+  margin: 20px;
+  padding: 20px 15px;
+  background-color: var(--primary-font-button-color);
+  border-radius: 4px;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: #f2fefd;
+}
+#button-contact,
+#yoga-button,
+#yogurt-button,
+#weather-button {
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease-in-out;
+}
+#button-contact:hover,
+#yoga-button:hover,
+#yogurt-button:hover,
+#weather-button:hover {
+  opacity: 0.9;
+}
+#button-about {
+  background-color: #fff;
+  border: 1px solid var(--primary-font-button-color);
+  transition: background-color 0.3s ease-in-out;
+}
+#button-about:hover {
+  background-color: #dddae8;
+}
+#button-about a {
+  color: var(--primary-font-button-color);
+}
+
+@media (max-width: 767px) {
+  .big-font {
+    font-size: 40px;
+  }
+  .medium-font {
+    font-size: 30px;
+  }
+
+  .small-font {
+    font-size: 20px;
+  }
+  .buttons {
+    padding: 15px 10px;
+    margin-right: 0;
+  }
+
+  .col-md-6 {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .col-md-6 img {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .medium-font {
+    font-size: 30px;
+  }
+
+  .big-font {
+    font-size: 70px;
+  }
+  .small-font {
+    font-size: 20px;
+  }
+}
